@@ -5,77 +5,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="dashboard-container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
+    <!-- Sidebar Section -->
+    <div class="sidebar" id="sidebar">
+      <!-- Sidebar Header -->
       <div class="sidebar-header">
-        <h1>E-Dashboard</h1>
-        <p>Alphalinx inc.</p>
+        <img src="Assets/E-Dashbord-logo.svg" alt="Logo" class="logo">
+        <h2 class="sidebar-title">E-Dashboard</h2>
+        <img src="Assets/menu-close-icon.svg" id="toggleSidebar" class="toggle-btn" alt="Toggle Sidebar">
       </div>
-      <nav class="nav-links">
-        <a href="#" class="nav-link active">Dashboard</a>
-        <a href="#" class="nav-link">My Business</a>
-        <a href="#" class="nav-link">Financial Resources</a>
-        <a href="#" class="nav-link">Mailbox</a>
-        <a href="#" class="nav-link">Visa Center</a>
-        <a href="#" class="nav-link">Compliance <span class="badge">02</span></a>
-      </nav>
+
+      <!-- Profile Section within Sidebar -->
+      <div class="profile-section">
+        <img src="Assets/profile-image.svg" alt="Profile Image" class="profile-img">
+        <h3>Alphalinx Inc.</h3>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <div class="sidebar-menu">
+        <ul>
+          <li><img src="Assets/Dashbord-icon.svg" alt="Dashboard"> Dashboard</li>
+          <li><img src="Assets/add-chart-icon.svg" alt="My Business"> My Business</li>
+          <li><img src="Assets/money-icon.svg" alt="Financial Resources"> Financial Resources</li>
+          <li><img src="Assets/mail-box-icon.svg" alt="Mailbox"> Mailbox</li>
+          <li><img src="Assets/airplane-icon.svg" alt="Visa Center"> Visa Center</li>
+          <li><img src="Assets/compliance-icon.svg" alt="Compliance"> Compliance <span class="badge">02</span></li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Footer -->
       <div class="sidebar-footer">
-        <div class="notifications">
-          <p>Notifications</p>
-        </div>
-        <div class="help-center">
-          <p>Help Center</p>
-        </div>
+        <ul>
+          <li><img src="Assets/notification-icon.svg" alt="Notifications"> Notifications</li>
+          <li><img src="Assets/help-center-icon.svg" alt="Help Center"> Help Center</li>
+        </ul>
         <div class="user-info">
-          <img src="avatar.png" alt="User Avatar">
-          <p>Jacobe James</p>
-          <p>jacobejames@gmail.com</p>
+          <img src="Assets/user-icon.svg" alt="User Icon">
+          <div>
+            <h4>Jacobe James</h4>
+            <p>jacobejames@gmail.com</p>
+          </div>
         </div>
       </div>
-    </aside>
+    </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Header -->
-      <header class="header">
-        <h2>Good morning, Emily! 👋</h2>
-        <p>Welcome back!</p>
-      </header>
+    <!-- Central Profile Section -->
+    <div class="profile-section-main">
+      <h2>Good morning, Emily! 👋</h2>
+      <p>Welcome back!</p>
+      <!-- Documents Status -->
+      <div class="documents-status">
+        <div class="documents-info">
+          <h3>All your documents are up to date!</h3>
+          <p>You have 3 upcoming document updates in January.</p>
+        </div>
+        <img src="Assets/documents-icon.svg" alt="Documents Icon">
+      </div>
 
-      <!-- Status Cards -->
-      <section class="status-cards">
-        <div class="card">
-          <div class="card-content">
-            <h3>All your documents are up to date!</h3>
-            <p>You have 3 upcoming document updates in January.</p>
+      <!-- Task Status -->
+      <div class="task-status">
+        <h3>21 Applications</h3>
+        <div class="status-chart">
+          <div class="status-circle incomplete"></div>
+          <p>Incomplete</p>
+          <div class="status-circle pending"></div>
+          <p>Pending approval</p>
+          <div class="status-circle approved"></div>
+          <p>Approved</p>
+        </div>
+      </div>
+
+      <!-- Mailbox -->
+      <div class="mailbox">
+        <h3>Mailbox</h3>
+        <p>Check on your mail all in one go.</p>
+        <div class="mailbox-status">
+          <div>
+            <p>New</p>
+            <p>23</p>
+          </div>
+          <div>
+            <p>Requested</p>
+            <p>23</p>
+          </div>
+          <div>
+            <p>Actions taken</p>
+            <p>23</p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <h3>21 Applications</h3>
-            <div class="status-list">
-              <p>Incomplete</p>
-              <p>Pending approval</p>
-              <p>Approved</p>
-            </div>
+      </div>
+
+      <!-- Legal Compliance -->
+      <div class="legal-compliance">
+        <h3>Legal compliance</h3>
+        <p>Keep your requirements up to date.</p>
+        <div class="compliance-status">
+          <div>
+            <p>Reminders</p>
+            <p>23</p>
+          </div>
+          <div>
+            <p>In progress</p>
+            <p>23</p>
+          </div>
+          <div>
+            <p>To approve</p>
+            <p>23</p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- Tasks -->
-      <section class="tasks">
-        <h3>Tasks</h3>
+    <!-- Right-Hand Side Section (Tasks and Payments) -->
+    <div class="right-section">
+      <!-- Tasks Section -->
+      <div class="tasks-section">
+        <h2>Tasks</h2>
         <table>
           <thead>
             <tr>
               <th>Task</th>
               <th>Category</th>
-              <th>Due Date</th>
+              <th>Due date</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -84,38 +140,38 @@
               <td>Update Tax Document for Alphalinx...</td>
               <td>Compliance</td>
               <td>23/11/23</td>
-              <td><button>Request sent</button></td>
+              <td>Request sent</td>
             </tr>
             <tr>
               <td>Update KYC document</td>
               <td>Compliance</td>
               <td>23/11/23</td>
-              <td><button>Request sent</button></td>
+              <td>Request sent</td>
             </tr>
             <tr>
               <td>Add clearer photo for visa application</td>
-              <td>Visa Center</td>
+              <td>Visa center</td>
               <td>23/11/23</td>
-              <td><button class="pending">Pending action</button></td>
+              <td>Pending action</td>
             </tr>
             <tr>
               <td>Document not clear: please add new file</td>
-              <td>Visa Center</td>
+              <td>Visa center</td>
               <td>23/11/23</td>
-              <td><button class="pending">Pending action</button></td>
+              <td>Pending action</td>
             </tr>
           </tbody>
         </table>
-      </section>
+      </div>
 
-      <!-- Payment History -->
-      <section class="payment-history">
-        <h3>Payment History</h3>
+      <!-- Payment History Section -->
+      <div class="payment-section">
+        <h2>Payment history</h2>
         <table>
           <thead>
             <tr>
               <th>Transaction ID</th>
-              <th>Date of Transaction</th>
+              <th>Date of transaction</th>
               <th>Amount</th>
               <th>Description</th>
             </tr>
@@ -159,9 +215,27 @@
             </tr>
           </tbody>
         </table>
-      </section>
-    </main>
+      </div>
+    </div>
   </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarTitle = document.querySelector('.sidebar-title');
+    const profileSection = document.querySelector('.profile-section');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('closed');
+      if (sidebar.classList.contains('closed')) {
+        sidebarTitle.style.display = 'none';
+        profileSection.style.display = 'none';
+      } else {
+        sidebarTitle.style.display = 'block';
+        profileSection.style.display = 'flex';
+      }
+    });
+  </script>
 </body>
 
 </html>
