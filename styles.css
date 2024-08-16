@@ -422,6 +422,7 @@ body {
   background-color: #f8f9fd;
   padding: 20px;
   margin-top: 20px;
+  margin-bottom: 10px;
 
 }
 
@@ -451,6 +452,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .status-item {
@@ -459,6 +461,8 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .status-item p {
@@ -488,7 +492,9 @@ body {
 .legal-compliance {
   background-color: #f8f9fd;
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
 
 }
 
@@ -517,12 +523,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
+}
+.legal-compliance .status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
-.status-item p {
+.legal-compliance .status-item p {
   color: #6A6A6D;
 }
+.legal-compliance .status-item img {
+  width: 27px;
+  height: 27px;
+  margin-bottom: 5px;
+}
 
+.legal-compliance .status-item .count {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1E1F21;
+}
 
 
 
@@ -642,14 +668,16 @@ h2 a {
   padding-left: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .mobile-tasks {
     display: none;
   }
 }
 
 /* Mobile view */
-@media (max-width: 600px) {
+
+@media (max-width: 500px) {
+
   .sidebar {
     display: none;
   }
@@ -715,12 +743,13 @@ h2 a {
   /* table mobile view */
 
   .mobile-tasks {
-
     width: 100%;
-    height: auto;
+    height: 300px;
     padding: 10px;
     background-color: #fff;
-    margin-top: 100px;
+    margin-top: 200px;
+    display: block;
+   
   }
 
   .mobile-tasks .tasks-section h2 {
@@ -819,6 +848,106 @@ h2 a {
     text-align: right;
   }
 
+  /*tr  */
+  .mobile-transactions {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    background-color: #fff;
+}
 
+.mobile-transactions .transactions-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 10px 0;
+}
+
+.mobile-transactions .transactions-section {
+    margin-top: 40px;
+}
+
+.mobile-transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-transaction a {
+    color: #515BAE;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mobile-transactions .tabs {
+    margin: 20px 0;
+}
+
+.mobile-transaction-item {
+    margin-bottom: 20px;
+}
+
+.mobile-transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mobile-transaction-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: #1E1F21;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.mobile-transaction-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mobile-transaction-category,
+.mobile-transaction-due-date,
+.mobile-transaction-status {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-transaction-category span:first-child,
+.mobile-transaction-due-date span:first-child,
+.mobile-transaction-status span:first-child {
+    font-weight: 400;
+    color: #6A6A6D;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.mobile-transaction-status span:nth-child(2) {
+    background-color: #F1F1F5;
+    border: 1px solid #CECED1;
+    color: #6A6A6D;
+    padding: 5px;
+    border-radius: 24px;
+}
+
+.mobile-transaction-category span:last-child,
+.mobile-transaction-due-date span:last-child {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000000;
+}
+
+.mobile-transaction-status {
+    text-align: right;
+}
 
 }
