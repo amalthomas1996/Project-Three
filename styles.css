@@ -15,6 +15,7 @@ body {
 .dashboard-container {
   display: flex;
   height: 100vh;
+  width: 100%;
 }
 
 /* Sidebar */
@@ -26,6 +27,7 @@ body {
   flex-direction: column;
   padding: 20px;
   transition: width 0.3s ease;
+  height: 100vh;
 }
 
 .sidebar.closed {
@@ -518,18 +520,64 @@ body {
 
 
 
-/* Right-Hand Side Section (Tasks and Payments) */
+/* Right-Hand Side Section (Tasks and Payments) 
+*/
 .right-section {
   flex-grow: 1;
   padding: 20px;
-  background-color: white;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+.tasks-section h2,
+.payment-section h2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+
+}
+
+
+.tasks-section .tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tasks-section .tab {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #6A6A6D;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+  cursor: pointer;
+}
+
+.tasks-section .tab.active {
+  background-color: #ffffff;
+  border-bottom: 2px solid #007bff;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .tasks-section table,
 .payment-section table {
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  border: 1px solid #E5E9FF;
+  border-radius: 10px;
+  overflow: hidden;
+
+
+}
+
+.payment-section {
+  margin-top: 40px;
 }
 
 .tasks-section th,
@@ -539,9 +587,43 @@ body {
   border-bottom: 1px solid #ddd;
   padding: 12px;
   text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: #1E1F21;
+  height: 56px;
+  margin: 10px 0;
 }
 
 .tasks-section th,
 .payment-section th {
   background-color: #f8f9fd;
+  font-weight: 600;
+
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+}
+
+.request-sent {
+  background-color: #F1F1F5;
+  color: #6A6A6D;
+}
+
+.pending-action {
+  background-color: #F1F1F5;
+  color: #6A6A6D;
+}
+
+h2 a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #515BAE;
+  text-decoration: underline;
+  padding-left: 10px;
 }

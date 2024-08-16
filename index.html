@@ -178,7 +178,12 @@
     <div class="right-section">
       <!-- Tasks Section -->
       <div class="tasks-section">
-        <h2>Tasks</h2>
+        <h2>Tasks <a href="#">View all</a></h2>
+        <div class="tabs">
+          <button class="tab active">My tasks</button>
+          <button class="tab">Overdue</button>
+          <button class="tab">Assigned by me</button>
+        </div>
         <table>
           <thead>
             <tr>
@@ -193,25 +198,25 @@
               <td>Update Tax Document for Alphalinx...</td>
               <td>Compliance</td>
               <td>23/11/23</td>
-              <td>Request sent</td>
+              <td><span class="status request-sent">Request sent</span></td>
             </tr>
             <tr>
               <td>Update KYC document</td>
               <td>Compliance</td>
               <td>23/11/23</td>
-              <td>Request sent</td>
+              <td><span class="status request-sent">Request sent</span></td>
             </tr>
             <tr>
               <td>Add clearer photo for visa application</td>
               <td>Visa center</td>
               <td>23/11/23</td>
-              <td>Pending action</td>
+              <td><span class="status pending-action">Pending action</span></td>
             </tr>
             <tr>
               <td>Document not clear: please add new file</td>
               <td>Visa center</td>
               <td>23/11/23</td>
-              <td>Pending action</td>
+              <td><span class="status pending-action">Pending action</span></td>
             </tr>
           </tbody>
         </table>
@@ -219,7 +224,7 @@
 
       <!-- Payment History Section -->
       <div class="payment-section">
-        <h2>Payment history</h2>
+        <h2>Payment history <a href="#">View all</a></h2>
         <table>
           <thead>
             <tr>
@@ -270,6 +275,11 @@
         </table>
       </div>
     </div>
+
+
+
+
+
   </div>
 
   <script src="./script.js"></script>
