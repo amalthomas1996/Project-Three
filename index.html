@@ -11,6 +11,7 @@
     rel="stylesheet">
   <title>Admin Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -96,17 +97,22 @@
 
 
 
-
       <!-- Task Status -->
       <div class="task-status">
-        <h3>21 Applications</h3>
-        <div class="status-chart">
-          <div class="status-circle incomplete"></div>
-          <p>Incomplete</p>
-          <div class="status-circle pending"></div>
-          <p>Pending approval</p>
-          <div class="status-circle approved"></div>
-          <p>Approved</p>
+        <img src="./Assets/chart.svg" alt="Status Chart" class="status-chart-img">
+        <div class="legend">
+          <div class="legend-item">
+            <div class="status-circle incomplete"></div>
+            <p>Incomplete</p>
+          </div>
+          <div class="legend-item">
+            <div class="status-circle pending"></div>
+            <p>Pending approval</p>
+          </div>
+          <div class="legend-item">
+            <div class="status-circle approved"></div>
+            <p>Approved</p>
+          </div>
         </div>
       </div>
 
@@ -249,23 +255,7 @@
     </div>
   </div>
 
-  <script>
-    const toggleBtn = document.getElementById('toggleSidebar');
-    const sidebar = document.getElementById('sidebar');
-    const sidebarTitle = document.querySelector('.sidebar-title');
-    const profileSection = document.querySelector('.profile-section');
-
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('closed');
-      if (sidebar.classList.contains('closed')) {
-        sidebarTitle.style.display = 'none';
-        profileSection.style.display = 'none';
-      } else {
-        sidebarTitle.style.display = 'block';
-        profileSection.style.display = 'flex';
-      }
-    });
-  </script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
