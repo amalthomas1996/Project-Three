@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <title>Admin Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -22,8 +27,8 @@
 
       <!-- Profile Section within Sidebar -->
       <div class="profile-section">
-        <img src="Assets/profile-image.svg" alt="Profile Image" class="profile-img">
-        <h3>Alphalinx Inc.</h3>
+        <img src="./Assets//A-profile-icon.svg" alt="Profile Image" class="profile-img">
+        <h3>Alphalinx Inc.</h3><img src="./Assets/down-arrow.svg" alt="">
       </div>
 
       <!-- Sidebar Menu -->
@@ -41,14 +46,24 @@
       <!-- Sidebar Footer -->
       <div class="sidebar-footer">
         <ul>
-          <li><img src="Assets/notification-icon.svg" alt="Notifications"> Notifications</li>
-          <li><img src="Assets/help-center-icon.svg" alt="Help Center"> Help Center</li>
+          <li><img src="./Assets/notification-icon.svg" alt="Notifications"> Notifications</li>
+          <div class="help-center">
+            <li><img src="./Assets/help-icon.svg" alt="Help Center">
+
+              <span>Help Center</span> <img src="./Assets/three-dot.svg" class="three-dots">
+            </li>
+          </div>
         </ul>
         <div class="user-info">
-          <img src="Assets/user-icon.svg" alt="User Icon">
-          <div>
-            <h4>Jacobe James</h4>
-            <p>jacobejames@gmail.com</p>
+          <div class="profile-pic">
+            <img src="./Assets/j-profile logo.svg" alt="">
+          </div>
+          <div class="user-details">
+            <p class="user-name">Jacobe James</p>
+            <p class="user-email">Jacobejames@gmail.com</p>
+          </div>
+          <div class="menu-icon">
+            <img src="./Assets/three-dot.svg" alt="Menu">
           </div>
         </div>
       </div>
@@ -56,16 +71,31 @@
 
     <!-- Central Profile Section -->
     <div class="profile-section-main">
-      <h2>Good morning, Emily! 👋</h2>
+      <h2>Good morning, <span>Emily!</span><img src="./Assets/hand-wave.svg" alt="hand-wave" class="hand-wave"></h2>
       <p>Welcome back!</p>
+
+
+
       <!-- Documents Status -->
       <div class="documents-status">
-        <div class="documents-info">
-          <h3>All your documents are up to date!</h3>
-          <p>You have 3 upcoming document updates in January.</p>
+        <div class="documents-image">
+          <img src="./Assets/doc-icon.svg" alt="Documents Icon">
         </div>
-        <img src="Assets/documents-icon.svg" alt="Documents Icon">
+        <div class="documents-info">
+          <p class="text-one">All your <strong>documents</strong> are</p>
+          <h3>up to date!</h3>
+          <hr>
+          <div class="doc-bottom">
+            <p>You have <span>3 upcoming </span>document updates in January.</p>
+            <div class="arrow-icon">
+              <img src="./Assets/right-arrow-icon.svg" alt="Arrow Icon">
+            </div>
+          </div>
+        </div>
       </div>
+
+
+
 
       <!-- Task Status -->
       <div class="task-status">
