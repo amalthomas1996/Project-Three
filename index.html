@@ -15,286 +15,476 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-  <div class="dashboard-container">
-    <!-- Sidebar Section -->
-    <div class="sidebar" id="sidebar">
-      <!-- Sidebar Header -->
-      <div class="sidebar-header">
-        <img src="Assets/E-Dashbord-logo.svg" alt="Logo" class="logo">
-        <h2 class="sidebar-title">E-Dashboard</h2>
-        <img src="Assets/menu-close-icon.svg" id="toggleSidebar" class="toggle-btn" alt="Toggle Sidebar">
-      </div>
+<div class="dashboard-container">
+  <!-- Sidebar Section -->
+  <div class="sidebar" id="sidebar">
+    <!-- Sidebar Header -->
+    <div class="sidebar-header">
+      <img src="Assets/E-Dashbord-logo.svg" alt="Logo" class="logo">
+      <h2 class="sidebar-title">E-Dashboard</h2>
+      <img src="Assets/menu-close-icon.svg" id="toggleSidebar" class="toggle-btn" alt="Toggle Sidebar">
+    </div>
 
-      <!-- Profile Section within Sidebar -->
-      <div class="profile-section">
-        <img src="./Assets/A-profile-icon.svg" alt="Profile Image" class="profile-img">
-        <h3>Alphalinx Inc.</h3><img src="./Assets/down-arrow.svg" alt="">
-      </div>
+    <!-- Profile Section within Sidebar -->
+    <div class="profile-section">
+      <img src="./Assets/A-profile-icon.svg" alt="Profile Image" class="profile-img">
+      <h3>Alphalinx Inc.</h3><img src="./Assets/down-arrow.svg" alt="">
+    </div>
 
-      <!-- Sidebar Menu -->
-      <div class="sidebar-menu">
-        <ul>
-          <li><img src="Assets/Dashbord-icon.svg" alt="Dashboard"> Dashboard</li>
-          <li><img src="Assets/add-chart-icon.svg" alt="My Business"> My Business</li>
-          <li><img src="Assets/money-icon.svg" alt="Financial Resources"> Financial Resources</li>
-          <li><img src="Assets/mail-box-icon.svg" alt="Mailbox"> Mailbox</li>
-          <li><img src="Assets/airplane-icon.svg" alt="Visa Center"> Visa Center</li>
-          <li><img src="Assets/compliance-icon.svg" alt="Compliance"> Compliance <span class="badge">02</span></li>
-        </ul>
-      </div>
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu">
+      <ul>
+        <li><img src="Assets/Dashbord-icon.svg" alt="Dashboard"> Dashboard</li>
+        <li><img src="Assets/add-chart-icon.svg" alt="My Business"> My Business</li>
+        <li><img src="Assets/money-icon.svg" alt="Financial Resources"> Financial Resources</li>
+        <li><img src="Assets/mail-box-icon.svg" alt="Mailbox"> Mailbox</li>
+        <li><img src="Assets/airplane-icon.svg" alt="Visa Center"> Visa Center</li>
+        <li><img src="Assets/compliance-icon.svg" alt="Compliance"> Compliance <span class="badge">02</span></li>
+      </ul>
+    </div>
 
-      <!-- Sidebar Footer -->
-      <div class="sidebar-footer">
-        <ul>
-          <li><img src="./Assets/notification-icon.svg" alt="Notifications"> Notifications</li>
-          <div class="help-center">
-            <li><img src="./Assets/help-icon.svg" alt="Help Center">
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+      <ul>
+        <li><img src="./Assets/notification-icon.svg" alt="Notifications"> Notifications</li>
+        <div class="help-center">
+          <li><img src="./Assets/help-icon.svg" alt="Help Center">
 
-              <span>Help Center</span> <img src="./Assets/three-dot.svg" class="three-dots">
-            </li>
-          </div>
-        </ul>
-        <div class="user-info">
-          <div class="profile-pic">
-            <img src="./Assets/j-profile logo.svg" alt="">
-          </div>
-          <div class="user-details">
-            <p class="user-name">Jacobe James</p>
-            <p class="user-email">Jacobejames@gmail.com</p>
-          </div>
-          <div class="menu-icon">
-            <img src="./Assets/three-dot.svg" alt="Menu">
-          </div>
+            <span>Help Center</span> <img src="./Assets/three-dot.svg" class="three-dots">
+          </li>
+        </div>
+      </ul>
+      <div class="user-info">
+        <div class="profile-pic">
+          <img src="./Assets/j-profile logo.svg" alt="">
+        </div>
+        <div class="user-details">
+          <p class="user-name">Jacobe James</p>
+          <p class="user-email">Jacobejames@gmail.com</p>
+        </div>
+        <div class="menu-icon">
+          <img src="./Assets/three-dot.svg" alt="Menu">
         </div>
       </div>
     </div>
-    <!-- Top bar for mobile view -->
-    <div class="top-bar">
-      <div class="logo">
-        <img src="./Assets/E-Dashbord-logo.svg" alt="Logo" height="40"> <!-- Update the logo source -->
-        <span class="logo-text">E-Dashboard</span>
-      </div>
-      <img src="./Assets/menu-close-icon.svg" class="toggle-btn" alt="Toggle Menu">
+  </div>
+  <!-- Top bar for mobile view -->
+  <div class="top-bar">
+    <div class="logo">
+      <img src="./Assets/E-Dashbord-logo.svg" alt="Logo" height="40"> <!-- Update the logo source -->
+      <span class="logo-text">E-Dashboard</span>
     </div>
-
-
-
-
-
-    <!-- Central Profile Section -->
-    <div class="profile-section-main">
-      <h2>Good morning, <span>Emily!</span><img src="./Assets/hand-wave.svg" alt="hand-wave" class="hand-wave"></h2>
-      <p>Welcome back!</p>
-
-
-
-      <!-- Documents Status -->
-      <div class="documents-status">
-        <div class="documents-image">
-          <img src="./Assets/doc-icon.svg" alt="Documents Icon">
-        </div>
-        <div class="documents-info">
-          <p class="text-one">All your <strong>documents</strong> are</p>
-          <h3>up to date!</h3>
-          <hr>
-          <div class="doc-bottom">
-            <p>You have <span>3 upcoming </span>document updates in January.</p>
-            <div class="arrow-icon">
-              <img src="./Assets/right-arrow-icon.svg" alt="Arrow Icon">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Task Status -->
-      <div class="task-status">
-        <img src="./Assets/chart.svg" alt="Status Chart" class="status-chart-img">
-        <div class="legend">
-          <div class="legend-item">
-            <div class="status-circle incomplete"></div>
-            <p>Incomplete</p>
-          </div>
-          <div class="legend-item">
-            <div class="status-circle pending"></div>
-            <p>Pending approval</p>
-          </div>
-          <div class="legend-item">
-            <div class="status-circle approved"></div>
-            <p>Approved</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mailbox -->
-      <div class="mailbox">
-        <h3>Mailbox <a href="#">View all</a></h3>
-        <p>Check on all your mail in one go.</p>
-        <div class="mailbox-status">
-          <div class="status-item">
-            <img src="./Assets//new-icon.svg" alt="New Icon">
-            <p>New</p>
-            <p class="count">23</p>
-          </div>
-          <div class="v-line"></div>
-          <div class="status-item">
-            <img src="./Assets/req-icon.svg" alt="Requested Icon">
-            <p>Requested</p>
-            <p class="count">23</p>
-
-          </div>
-          <div class="v-line"></div>
-          <div class="status-item">
-            <img src="./Assets/action-icon.svg" alt="Actions Icon">
-            <p>Actions taken</p>
-            <p class="count">23</p>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Legal Compliance -->
-
-
-      <div class="legal-compliance">
-        <h3>Legal compliance <a href="#">View all</a></h3>
-        <p>Keep yor requiremets up to date.</p>
-        <div class="legal-status">
-          <div class="status-item">
-            <img src="./Assets//new-icon.svg" alt="New Icon">
-            <p>Reminders</p>
-            <p class="count">23</p>
-          </div>
-          <div class="v-line"></div>
-          <div class="status-item">
-            <img src="./Assets/req-icon.svg" alt="Requested Icon">
-            <p>In progress</p>
-            <p class="count">23</p>
-
-          </div>
-          <div class="v-line"></div>
-          <div class="status-item">
-            <img src="./Assets/action-icon.svg" alt="Actions Icon">
-            <p>To approve</p>
-            <p class="count">23</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Right-Hand Side Section (Tasks and Payments) -->
-    <div class="right-section">
-      <!-- Tasks Section -->
-      <div class="tasks-section">
-        <h2>Tasks <a href="#">View all</a></h2>
-        <div class="tabs">
-          <button class="tab active">My tasks</button>
-          <button class="tab">Overdue</button>
-          <button class="tab">Assigned by me</button>
-        </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Task</th>
-              <th>Category</th>
-              <th>Due date</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Update Tax Document for Alphalinx...</td>
-              <td>Compliance</td>
-              <td>23/11/23</td>
-              <td><span class="status request-sent">Request sent</span></td>
-            </tr>
-            <tr>
-              <td>Update KYC document</td>
-              <td>Compliance</td>
-              <td>23/11/23</td>
-              <td><span class="status request-sent">Request sent</span></td>
-            </tr>
-            <tr>
-              <td>Add clearer photo for visa application</td>
-              <td>Visa center</td>
-              <td>23/11/23</td>
-              <td><span class="status pending-action">Pending action</span></td>
-            </tr>
-            <tr>
-              <td>Document not clear: please add new file</td>
-              <td>Visa center</td>
-              <td>23/11/23</td>
-              <td><span class="status pending-action">Pending action</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Payment History Section -->
-      <div class="payment-section">
-        <h2>Payment history <a href="#">View all</a></h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Transaction ID</th>
-              <th>Date of transaction</th>
-              <th>Amount</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>#764657758</td>
-              <td>23/01/19</td>
-              <td>$5.99</td>
-              <td>Mailbox</td>
-            </tr>
-            <tr>
-              <td>#764657758</td>
-              <td>22/01/19</td>
-              <td>$99</td>
-              <td>Registration (upgrade)</td>
-            </tr>
-            <tr>
-              <td>#764657758</td>
-              <td>21/01/19</td>
-              <td>$5.99</td>
-              <td>Mailbox</td>
-            </tr>
-            <tr>
-              <td>#764657758</td>
-              <td>19/01/19</td>
-              <td>$5.99</td>
-              <td>Mailbox</td>
-            </tr>
-            <tr>
-              <td>#764657758</td>
-              <td>09/01/19</td>
-              <td>$5.99</td>
-              <td>Mailbox</td>
-            </tr>
-            <tr>
-              <td>#764657758</td>
-              <td>23/12/18</td>
-              <td>$5.99</td>
-              <td>Mailbox</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-
-
-
-
+    <img src="./Assets/menu-close-icon.svg" class="toggle-btn" alt="Toggle Menu">
   </div>
 
-  <script src="./script.js"></script>
-</body>
+
+
+
+
+  <!-- Central Profile Section -->
+  <div class="profile-section-main">
+    <h2>Good morning, <span>Emily!</span><img src="./Assets/hand-wave.svg" alt="hand-wave" class="hand-wave"></h2>
+    <p>Welcome back!</p>
+
+
+
+    <!-- Documents Status -->
+    <div class="documents-status">
+      <div class="documents-image">
+        <img src="./Assets/doc-icon.svg" alt="Documents Icon">
+      </div>
+      <div class="documents-info">
+        <p class="text-one">All your <strong>documents</strong> are</p>
+        <h3>up to date!</h3>
+        <hr>
+        <div class="doc-bottom">
+          <p>You have <span>3 upcoming </span>document updates in January.</p>
+          <div class="arrow-icon">
+            <img src="./Assets/right-arrow-icon.svg" alt="Arrow Icon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Task Status -->
+    <div class="task-status">
+      <img src="./Assets/chart.svg" alt="Status Chart" class="status-chart-img">
+      <div class="legend">
+        <div class="legend-item">
+          <div class="status-circle incomplete"></div>
+          <p>Incomplete</p>
+        </div>
+        <div class="legend-item">
+          <div class="status-circle pending"></div>
+          <p>Pending approval</p>
+        </div>
+        <div class="legend-item">
+          <div class="status-circle approved"></div>
+          <p>Approved</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mailbox -->
+    <div class="mailbox">
+      <h3>Mailbox <a href="#">View all</a></h3>
+      <p>Check on all your mail in one go.</p>
+      <div class="mailbox-status">
+        <div class="status-item">
+          <img src="./Assets//new-icon.svg" alt="New Icon">
+          <p>New</p>
+          <p class="count">23</p>
+        </div>
+        <div class="v-line"></div>
+        <div class="status-item">
+          <img src="./Assets/req-icon.svg" alt="Requested Icon">
+          <p>Requested</p>
+          <p class="count">23</p>
+
+        </div>
+        <div class="v-line"></div>
+        <div class="status-item">
+          <img src="./Assets/action-icon.svg" alt="Actions Icon">
+          <p>Actions taken</p>
+          <p class="count">23</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Legal Compliance -->
+
+
+    <div class="legal-compliance">
+      <h3>Legal compliance <a href="#">View all</a></h3>
+      <p>Keep yor requiremets up to date.</p>
+      <div class="legal-status">
+        <div class="status-item">
+          <img src="./Assets//new-icon.svg" alt="New Icon">
+          <p>Reminders</p>
+          <p class="count">23</p>
+        </div>
+        <div class="v-line"></div>
+        <div class="status-item">
+          <img src="./Assets/req-icon.svg" alt="Requested Icon">
+          <p>In progress</p>
+          <p class="count">23</p>
+
+        </div>
+        <div class="v-line"></div>
+        <div class="status-item">
+          <img src="./Assets/action-icon.svg" alt="Actions Icon">
+          <p>To approve</p>
+          <p class="count">23</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Right-Hand Side Section (Tasks and Payments) -->
+  <div class="right-section">
+    <!-- Tasks Section -->
+    <div class="tasks-section">
+      <h2>Tasks <a href="#">View all</a></h2>
+      <div class="tabs">
+        <button class="tab active">My tasks</button>
+        <button class="tab">Overdue</button>
+        <button class="tab">Assigned by me</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Category</th>
+            <th>Due date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Update Tax Document for Alphalinx...</td>
+            <td>Compliance</td>
+            <td>23/11/23</td>
+            <td><span class="status request-sent">Request sent</span></td>
+          </tr>
+          <tr>
+            <td>Update KYC document</td>
+            <td>Compliance</td>
+            <td>23/11/23</td>
+            <td><span class="status request-sent">Request sent</span></td>
+          </tr>
+          <tr>
+            <td>Add clearer photo for visa application</td>
+            <td>Visa center</td>
+            <td>23/11/23</td>
+            <td><span class="status pending-action">Pending action</span></td>
+          </tr>
+          <tr>
+            <td>Document not clear: please add new file</td>
+            <td>Visa center</td>
+            <td>23/11/23</td>
+            <td><span class="status pending-action">Pending action</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Payment History Section -->
+    <div class="payment-section">
+      <h2>Payment history <a href="#">View all</a></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Date of transaction</th>
+            <th>Amount</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#764657758</td>
+            <td>23/01/19</td>
+            <td>$5.99</td>
+            <td>Mailbox</td>
+          </tr>
+          <tr>
+            <td>#764657758</td>
+            <td>22/01/19</td>
+            <td>$99</td>
+            <td>Registration (upgrade)</td>
+          </tr>
+          <tr>
+            <td>#764657758</td>
+            <td>21/01/19</td>
+            <td>$5.99</td>
+            <td>Mailbox</td>
+          </tr>
+          <tr>
+            <td>#764657758</td>
+            <td>19/01/19</td>
+            <td>$5.99</td>
+            <td>Mailbox</td>
+          </tr>
+          <tr>
+            <td>#764657758</td>
+            <td>09/01/19</td>
+            <td>$5.99</td>
+            <td>Mailbox</td>
+          </tr>
+          <tr>
+            <td>#764657758</td>
+            <td>23/12/18</td>
+            <td>$5.99</td>
+            <td>Mailbox</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</div>
+
+<!--mobile view table-->
+<!--Tasks-->
+<div class="mobile-tasks">
+  <div class="tasks-section">
+    <div class="mobile-task">
+      <h2>Tasks</h2> <a href="#">View all</a>
+    </div>
+    <div class="tabs">
+      <button class="tab active">My tasks</button>
+
+      <button class="tab">Overdue</button>
+      <button class="tab">Assigned by me</button>
+    </div>
+
+
+    <div class="mobile-task-item">
+      <div class="mobile-task-header">
+        <span class="mobile-task-title">Update Tax Document for Alphalinx...</span>
+
+      </div>
+      <div class="mobile-task-details">
+        <div class="mobile-task-category">
+          <span>Category</span>
+          <span>Compliance</span>
+        </div>
+        <div class="mobile-task-due-date">
+          <span>Due date</span>
+          <span>23/11/23</span>
+        </div>
+        <div class="mobile-task-status">
+          <span>Status</span>
+          <span>Request sent</span>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-task-item">
+      <div class="mobile-task-header">
+        <span class="mobile-task-title">Update KYC document</span>
+
+      </div>
+      <div class="mobile-task-details">
+        <div class="mobile-task-category">
+          <span>Category</span>
+          <span>Compliance</span>
+        </div>
+        <div class="mobile-task-due-date">
+          <span>Due date</span>
+          <span>23/11/23</span>
+        </div>
+        <div class="mobile-task-status">
+          <span>Status</span>
+          <span>Request sent</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-task-item">
+      <div class="mobile-task-header">
+        <span class="mobile-task-title">Add clearer photo for visa application</span>
+
+      </div>
+      <div class="mobile-task-details">
+        <div class="mobile-task-category">
+          <span>Category</span>
+          <span>Visa center</span>
+        </div>
+        <div class="mobile-task-due-date">
+          <span>Due date</span>
+          <span>23/11/23</span>
+        </div>
+        <div class="mobile-task-status">
+          <span>Status</span>
+          <span>Pending action</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-task-item">
+      <div class="mobile-task-header">
+        <span class="mobile-task-title">Document not clear: please add new file</span>
+
+      </div>
+      <div class="mobile-task-details">
+        <div class="mobile-task-category">
+          <span>Category</span>
+          <span>Visa center</span>
+        </div>
+        <div class="mobile-task-due-date">
+          <span>Due date</span>
+          <span>23/11/23</span>
+        </div>
+        <div class="mobile-task-status">
+          <span>Status</span>
+          <span>Pending action</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Transactions-->
+
+
+
+  <div class="mobile-tasks">
+    <div class="tasks-section">
+      <div class="mobile-task">
+        <h2>Transaction history</h2> <a href="#">View all</a>
+      </div>
+      <div class="mobile-task-item">
+        <div class="mobile-task-header">
+
+
+        </div>
+        <div class="mobile-task-details">
+          <div class="mobile-task-category">
+            <span>#764657758</span>
+            <span>23/01/19</span>
+          </div>
+          <div class="mobile-task-due-date">
+            <span>$5.99</span>
+
+          </div>
+          <div class="mobile-task-status">
+            <span>Description</span>
+            <span>Mailroom</span>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-task-item">
+        <div class="mobile-task-header">
+
+
+        </div>
+        <div class="mobile-task-details">
+          <div class="mobile-task-category">
+            <span>#764657758</span>
+            <span>23/01/19</span>
+          </div>
+          <div class="mobile-task-due-date">
+
+            <span>23/11/23</span>
+          </div>
+          <div class="mobile-task-status">
+            <span>Status</span>
+            <span>Request sent</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-task-item">
+        <div class="mobile-task-header">
+
+
+        </div>
+        <div class="mobile-task-details">
+          <div class="mobile-task-category">
+            <span>#764657758</span>
+            <span>Visa center</span>
+          </div>
+          <div class="mobile-task-due-date">
+
+            <span>23/01/19</span>
+          </div>
+          <div class="mobile-task-status">
+            <span>Status</span>
+            <span>Pending action</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-task-item">
+        <div class="mobile-task-header">
+
+
+        </div>
+        <div class="mobile-task-details">
+          <div class="mobile-task-category">
+            <span>#764657758</span>
+            <span>Visa center</span>
+          </div>
+          <div class="mobile-task-due-date">
+
+            <span>23/01/19</span>
+          </div>
+          <div class="mobile-task-status">
+            <span>Status</span>
+            <span>Pending action</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    </body>
 
 </html>

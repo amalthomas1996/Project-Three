@@ -642,17 +642,29 @@ h2 a {
   padding-left: 10px;
 }
 
-
+@media (min-width: 600px) {
+  .mobile-tasks {
+    display: none;
+  }
+}
 
 /* Mobile view */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .sidebar {
     display: none;
   }
 
   .profile-section-main {
     margin-top: 70px;
+    width: 100%;
+
   }
+
+  .right-section {
+    display: none;
+
+  }
+
 
   .top-bar {
     display: flex;
@@ -696,6 +708,111 @@ h2 a {
     /* Pushes the toggle button to the right */
   }
 
-  .right-section {}
+  /* table mobile view */
+
+  .mobile-tasks {
+
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+
+    background-color: #fff;
+    margin-top: 100px;
+  }
+
+  .mobile-tasks .tasks-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 10px 0;
+  }
+
+  .mobile-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-task a {
+    color: #515BAE;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .mobile-tasks .tabs {
+    margin: 20px 0;
+  }
+
+  .mobile-task-item {
+    margin-bottom: 20px;
+  }
+
+  .mobile-task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .mobile-task-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: #1E1F21;
+    margin-bottom: 16px;
+    margin-top: 20px;
+  }
+
+
+
+  .mobile-task-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .mobile-task-category,
+  .mobile-task-due-date,
+  .mobile-task-status {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-task-category span:first-child,
+  .mobile-task-due-date span:first-child,
+  .mobile-task-status span:first-child {
+    font-weight: 400;
+    color: #6A6A6D;
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .mobile-task-status span:nth-child(2) {
+    background-color: #F1F1F5;
+    border: 1px solid #CECED1;
+    color: #6A6A6D;
+    padding: 5px;
+    border-radius: 24px;
+  }
+
+  .mobile-task-category span:last-child,
+  .mobile-task-due-date span:last-child {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  .mobile-task-status {
+    text-align: right;
+  }
+
+
 
 }
