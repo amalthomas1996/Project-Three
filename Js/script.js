@@ -1,41 +1,60 @@
 //toggle sidebar
 
-const toggleBtn = document.getElementById('toggleSidebar');
-const sidebar = document.getElementById('sidebar');
-const sidebarTitle = document.querySelector('.sidebar-title');
-const profileSection = document.querySelector('.profile-section');
-
-toggleBtn.addEventListener('click', () => {
+document.getElementById('toggleSidebar').addEventListener('click', function () {
+  const sidebar = document.getElementById('sidebar');
   sidebar.classList.toggle('closed');
-  if (sidebar.classList.contains('closed')) {
-    sidebarTitle.style.display = 'none';
-    profileSection.style.display = 'none';
-  } else {
-    sidebarTitle.style.display = 'block';
-    profileSection.style.display = 'flex';
-  }
 });
 
 
-//Task Status
+// mobile menu open and close 
 
-// Create a doughnut chart using Chart.js
-const ctx = document.getElementById('status-circle').getContext('2d');
-const chart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    datasets: [{
-      data: [40, 10, 50], // Placeholder data for Incomplete, Pending, Approved
-      backgroundColor: ['#fdb44b', '#ff6b6b', '#4caf50'],
-      borderWidth: 0
-    }]
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    cutout: '75%',
-    plugins: {
-      tooltip: { enabled: false },
-    },
-  }
+document.getElementById('toggleMenu').addEventListener('click', function () {
+  document.getElementById('mobileMenu').classList.add('open');
 });
+
+document.getElementById('closeMenu').addEventListener('click', function () {
+  document.getElementById('mobileMenu').classList.remove('open');
+});
+// when mobile menu open the top barmove up
+document.getElementById('toggleMenu').addEventListener('click', function () {
+  const topBar = document.querySelector('.top-bar');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  topBar.classList.add('move-up'); // Move the top bar up
+  mobileMenu.classList.add('open'); // Show the mobile menu
+});
+
+document.getElementById('closeMenu').addEventListener('click', function () {
+  const topBar = document.querySelector('.top-bar');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  topBar.classList.remove('move-up'); // Move the top bar back down
+  mobileMenu.classList.remove('open'); // Hide the mobile menu
+});
+
+//trascaction open and close
+
+document.querySelectorAll('.toggle-description').forEach(function (toggleBtn) {
+  toggleBtn.addEventListener('click', function () {
+    const transactionItem = this.closest('.mobile-transaction-item');
+    const descriptionWrapper = transactionItem.querySelector('.mobile-transaction-description-wrapper');
+
+    if (transactionItem.classList.contains('active')) {
+      // If active, collapse it
+      descriptionWrapper.style.maxHeight = 0;
+    } else {
+      // If not active, expand it
+      descriptionWrapper.style.maxHeight = descriptionWrapper.scrollHeight + 'px';
+    }
+
+    transactionItem.classList.toggle('active');
+
+    // Toggle the arrow icon
+    if (transactionItem.classList.contains('active')) {
+      this.src = './Assets/up.svg'; // Change to up arrow when open
+    } else {
+      this.src = './Assets/down.svg'; // Change to down arrow when closed
+    }
+  });
+});
+
